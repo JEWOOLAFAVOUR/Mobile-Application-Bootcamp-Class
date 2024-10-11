@@ -4,11 +4,14 @@ import React from 'react'
 const _layout = () => {
     return (
         <View style={styles.page}>
-            <View style={styles.box1}></View>
-            <View style={styles.box2}></View>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                <View style={styles.box1}></View>
+                <View style={styles.box2}></View>
+                <View style={styles.box3}></View>
+            </View>
         </View>
-    )
-}
+    );
+};
 
 export default _layout
 
@@ -16,19 +19,23 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         backgroundColor: 'white',
-        paddingVertical: 40,
-        paddingHorizontal: 30,
-        alignItems: 'flex-end'
+        paddingVertical: 50,
+        paddingHorizontal: 10,
     },
     box1: {
-        height: 130,
-        width: 130,
+        height: 300,
+        width: 70,
         backgroundColor: 'blue',
     },
     box2: {
-        height: 130,
-        width: 130,
+        height: 70,
+        width: 70,
         backgroundColor: 'tomato',
-        marginTop: 30,
+        // borderRadius: 110,
+    },
+    box3: {
+        height: 70,
+        width: 70,
+        backgroundColor: 'black',
     },
 })
