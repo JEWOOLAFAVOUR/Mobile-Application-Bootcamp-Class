@@ -9,6 +9,7 @@ const _layout = () => {
                 <View style={styles.box2}></View>
                 <View style={styles.box3}></View>
             </View>
+            <Text>Hello Mercy</Text>
         </View>
     );
 };
