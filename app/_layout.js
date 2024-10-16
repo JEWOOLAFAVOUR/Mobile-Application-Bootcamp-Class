@@ -1,29 +1,22 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { listData } from './database'
 
 const _layout = () => {
-    const listData = [
-        {
-            alphabet: "A",
-            description: "Apple",
-        }, {
-            alphabet: "B",
-            description: "Ball",
-        }, {
-            alphabet: "C",
-            description: "Cat",
-        },
-    ];
+
     return (
         <View style={styles.page}>
-            <Text style={{ fontSize: 30, color: "black", fontWeight: "bold" }}>FlatList Class</Text>
+            <Text style={{ fontSize: 30, color: "black", fontWeight: "bold", marginBottom: 20 }}>FlatList Class</Text>
             <FlatList
                 data={listData}
+                horizontal={true}
+                // numColumns={3}
+                // columnWrapperStyle={{ justifyContent: 'space-between' }}
                 renderItem={({ item }) => {
                     return (
-                        <View>
-                            <Text>{item.alphabet} for {item.description}</Text>
-                        </View>
+                        <TouchableOpacity activeOpacity={0.7} style={[styles.container, { backgroundColor: item.bg }]}>
+                            <Text style={{ fontSize: 13, color: "white", fontWeight: 'bold' }}>{item.alphabet} for {item.description}</Text>
+                        </TouchableOpacity>
                     )
                 }}
             />
@@ -39,5 +32,15 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         paddingTop: 40,
         paddingHorizontal: 20,
+    },
+    container: {
+        height: 95,
+        width: 95,
+        backgroundColor: 'blue',
+        marginBottom: 10,
+        marginRight: 20,
+        borderRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 })
