@@ -2,127 +2,152 @@ export const listData = [
     {
         alphabet: "A",
         description: "Apple",
-        bg: "blue"
+        bg: "blue",
+        img: "https://img.freepik.com/free-photo/fresh-red-apple-with-water-drops_23-2150811011.jpg?t=st=1729096830~exp=1729100430~hmac=7dbe70a66b4d0dee8a805bdb322c2709b042ffeafc672c773a16bb5754f41eda&w=740"
     },
     {
         alphabet: "B",
         description: "Ball",
-        bg: "red"
+        bg: "red",
+        img: ""
     },
     {
         alphabet: "C",
         description: "Cat",
-        bg: "green"
+        bg: "green",
+        img: ""
     },
     {
         alphabet: "D",
         description: "Dog",
-        bg: "yellow"
+        bg: "yellow",
+        img: ""
     },
     {
         alphabet: "E",
         description: "Elephant",
-        bg: "purple"
+        bg: "purple",
+        img: ""
     },
     {
         alphabet: "F",
         description: "Fish",
-        bg: "orange"
+        bg: "orange",
+        img: ""
     },
     {
         alphabet: "G",
         description: "Giraffe",
-        bg: "pink"
+        bg: "pink",
+        img: ""
     },
     {
         alphabet: "H",
         description: "Horse",
-        bg: "teal"
+        bg: "teal",
+        img: ""
     },
     {
         alphabet: "I",
         description: "Igloo",
-        bg: "cyan"
+        bg: "cyan",
+        img: ""
     },
     {
         alphabet: "J",
         description: "Jelly",
-        bg: "brown"
+        bg: "brown",
+        img: ""
     },
     {
         alphabet: "K",
         description: "Kite",
-        bg: "lightgreen"
+        bg: "lightgreen",
+        img: ""
     },
     {
         alphabet: "L",
         description: "Lion",
-        bg: "navy"
+        bg: "navy",
+        img: ""
     },
     {
         alphabet: "M",
         description: "Monkey",
-        bg: "violet"
+        bg: "violet",
+        img: ""
     },
     {
         alphabet: "N",
         description: "Nest",
-        bg: "lightblue"
+        bg: "lightblue",
+        img: ""
     },
     {
         alphabet: "O",
         description: "Owl",
-        bg: "gold"
+        bg: "gold",
+        img: ""
     },
     {
         alphabet: "P",
         description: "Panda",
-        bg: "silver"
+        bg: "silver",
+        img: ""
     },
     {
         alphabet: "Q",
         description: "Queen",
-        bg: "crimson"
+        bg: "crimson",
+        img: ""
     },
     {
         alphabet: "R",
         description: "Rabbit",
-        bg: "coral"
+        bg: "coral",
+        img: ""
     },
     {
         alphabet: "S",
         description: "Snake",
-        bg: "aqua"
+        bg: "aqua",
+        img: ""
     },
     {
         alphabet: "T",
         description: "Tiger",
-        bg: "lime"
+        bg: "lime",
+        img: ""
     },
     {
         alphabet: "U",
         description: "Umbrella",
-        bg: "indigo"
+        bg: "indigo",
+        img: ""
     },
     {
         alphabet: "V",
         description: "Violin",
-        bg: "plum"
+        bg: "plum",
+        img: ""
     },
     {
         alphabet: "W",
         description: "Whale",
-        bg: "lavender"
+        bg: "lavender",
+        img: ""
     },
     {
         alphabet: "X",
         description: "Xylophone",
-        bg: "maroon"
+        bg: "maroon",
+        img: ""
     },
     {
         alphabet: "Y",
         description: "Yacht",
-        bg: "orchid"
+        bg: "orchid",
+        img: ""
     },
     {
         alphabet: "Z",
