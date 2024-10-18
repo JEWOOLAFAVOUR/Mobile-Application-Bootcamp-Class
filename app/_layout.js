@@ -1,53 +1,34 @@
-import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image } from 'react-native'
-import React from 'react'
-import { listData } from './database'
+import { StyleSheet, Text, View, Image, TouchableOpacity, FlatList } from 'react-native';
+import React from 'react';
 
-const _layout = () => {
-
+const App = () => {
     return (
         <View style={styles.page}>
-            <Text style={{ fontSize: 30, color: "black", fontWeight: "bold", marginBottom: 20 }}>FlatList Class</Text>
-            <FlatList
-                data={listData}
-                showsVerticalScrollIndicator={false}
-                // horizontal={true}
-                // numColumns={3}
-                // columnWrapperStyle={{ justifyContent: 'space-between' }}
-                renderItem={({ item }) => {
-                    return (
-                        <TouchableOpacity activeOpacity={0.7} style={[styles.container, { backgroundColor: item.bg }]}>
-                            <Image
-                                source={{ uri: item.img }}
-                                style={{ height: 90, width: 90, }}
-                            />
-                            <Text style={{ fontSize: 13, color: "white", fontWeight: 'bold' }}>{item.alphabet} for {item.description}</Text>
-                        </TouchableOpacity>
-                    )
-                }}
-            />
-        </View>
-    )
-}
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 20 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'baseline' }}>
+                    <Text style={{ fontSize: 22, color: 'black', fontWeight: 'bold' }}>Instagram</Text>
+                    <Image source={require('../assets/icons/arrowdown.png')} style={{ height: 10, width: 10, marginLeft: 8 }} />
+                </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <TouchableOpacity>
+                        <Image source={require('../assets/icons/love.png')} style={{ height: 20, width: 20, marginRight: 20 }} />
+                        <View style={{ height: 5, width: 5, backgroundColor: 'red', borderRadius: 100, }} />
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <Image source={require('../assets/icons/messenger.png')} style={{ height: 20, width: 20 }} />
+                    </TouchableOpacity>
+                </View>
+            </View>
+        </View >
+    );
+};
 
-export default _layout
+export default App;
 
 const styles = StyleSheet.create({
     page: {
         flex: 1,
-        backgroundColor: "#ffffff",
-        paddingTop: 40,
-        paddingHorizontal: 20,
+        backgroundColor: "white",
+        paddingTop: 35,
     },
-    container: {
-        height: 120,
-        // width: 95,
-        backgroundColor: 'blue',
-        marginBottom: 10,
-        marginRight: 20,
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingHorizontal: 20,
-        // justifyContent: 'center',
-        // alignItems: 'center',
-    },
-})
+});
