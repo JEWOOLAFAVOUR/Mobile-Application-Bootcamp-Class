@@ -71,7 +71,7 @@ const App = () => {
                                         <Image source={{ uri: item.profilePic }} style={{ height: 40, width: 40, borderRadius: 100, }} />
                                     </View>
                                     <View style={{ marginLeft: 10, flex: 1 }}>
-                                        <Text style={{ fontSize: 12, color: '#fffff1', }}>{item.profileName}</Text>
+                                        <Text numberOfLines={1} style={{ fontSize: 12, color: '#fffff1', }}>{item.profileName}</Text>
                                         <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5 }}>
                                             <Image source={require('../assets/icons/music.png')} style={{ tintColor: '#fffff1', height: 15, width: 15, }} />
                                             <Text style={{ fontSize: 12, color: '#fffff1' }}>  {item.profileName} - Original audio</Text>
