@@ -4,7 +4,13 @@ import React from 'react'
 const _layout = () => {
     return (
         <View style={styles.page}>
-            <Text>_layout</Text>
+            <View style={styles.box1}>
+                <View style={styles.box2}>
+                    <View style={styles.box3}></View>
+                    <View style={styles.box3}></View>
+                    <View style={styles.box3}></View>
+                </View>
+            </View>
         </View>
     )
 }
@@ -15,6 +21,30 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         backgroundColor: 'white',
+        // paddingTop: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    box1: {
+        height: 300,
+        width: 300,
+        borderWidth: 5,
+        borderRadius: 300,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    box2: {
+        height: 205,
+        width: 205,
+        borderWidth: 3,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    box3: {
+        height: 60,
+        width: 60,
+        borderWidth: 5,
+        borderRadius: 60,
     },
 })
 
