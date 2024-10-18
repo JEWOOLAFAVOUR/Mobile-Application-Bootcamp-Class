@@ -57,7 +57,6 @@ const App = () => {
                     </TouchableOpacity>
                 </View>
             </View>
-            {/* STATUS SLIDES */}
             {/* POSTS SECTIONS */}
             <View style={{}}>
                 <FlatList
