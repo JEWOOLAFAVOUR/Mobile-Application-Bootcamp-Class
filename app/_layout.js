@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     page: {
         flex: 1,
         backgroundColor: 'white',
-        // paddingTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -32,19 +31,22 @@ const styles = StyleSheet.create({
         borderRadius: 300,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: "yellow",
     },
     box2: {
         height: 205,
         width: 205,
         borderWidth: 3,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        backgroundColor: "green",
     },
     box3: {
         height: 60,
         width: 60,
         borderWidth: 5,
         borderRadius: 60,
+        backgroundColor: 'white',
     },
 })
 
