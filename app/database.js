@@ -1,157 +1,35 @@
-export const listData = [
+export const statusData = [
     {
-        alphabet: "A",
-        description: "Apple",
-        bg: "blue",
-        img: "https://img.freepik.com/free-photo/fresh-red-apple-with-water-drops_23-2150811011.jpg?t=st=1729096830~exp=1729100430~hmac=7dbe70a66b4d0dee8a805bdb322c2709b042ffeafc672c773a16bb5754f41eda&w=740"
+        id: 1,
+        name: "Your story",
+        profilePic: 'https://avatars.githubusercontent.com/u/98407795?v=4',
+    }, {
+        id: 2,
+        name: "Abraham",
+        profilePic: 'https://img.freepik.com/premium-photo/charming-young-african-man-pointing-copy-space-smiling-while-standing-against-grey-wall_425904-1985.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid',
+    }, {
+        id: 3,
+        name: "Jacob",
+        profilePic: 'https://img.freepik.com/premium-photo/attractive-african-guy-white-t-shirt-yellow-with-copy-space_88135-20084.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid',
+    }, {
+        id: 4,
+        name: "Mercy",
+        profilePic: "https://img.freepik.com/free-photo/african-american-young-adult-feeling-joyful-blue-background_482257-92038.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid",
+    }, {
+        id: 5,
+        name: "Padi",
+        profilePic: 'https://img.freepik.com/free-photo/african-american-man-wearing-red-sweater_273609-23350.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid',
+    }, {
+        id: 6,
+        name: "Enoch",
+        profilePic: 'https://img.freepik.com/free-photo/positive-unshaven-businessman-laughs-pleasantly-keeps-palm-chest-dressed-elegantly-has-friendly-expression-points-away-blank-space-stands-hole-colored-paper_273609-32832.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid',
+    }, {
+        id: 7,
+        name: "Eniola",
+        profilePic: 'https://img.freepik.com/free-photo/beautiful-african-woman-monochrome-portrait_23-2151436221.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid',
+    }, {
+        id: 8,
+        name: "Tinuke",
+        profilePic: 'https://img.freepik.com/premium-photo/painting-woman-with-colorful-face-multicolored-light-it_869640-167859.jpg?ga=GA1.1.1736039332.1707270817&semt=ais_hybrid',
     },
-    {
-        alphabet: "B",
-        description: "Ball",
-        bg: "red",
-        img: ""
-    },
-    {
-        alphabet: "C",
-        description: "Cat",
-        bg: "green",
-        img: ""
-    },
-    {
-        alphabet: "D",
-        description: "Dog",
-        bg: "yellow",
-        img: ""
-    },
-    {
-        alphabet: "E",
-        description: "Elephant",
-        bg: "purple",
-        img: ""
-    },
-    {
-        alphabet: "F",
-        description: "Fish",
-        bg: "orange",
-        img: ""
-    },
-    {
-        alphabet: "G",
-        description: "Giraffe",
-        bg: "pink",
-        img: ""
-    },
-    {
-        alphabet: "H",
-        description: "Horse",
-        bg: "teal",
-        img: ""
-    },
-    {
-        alphabet: "I",
-        description: "Igloo",
-        bg: "cyan",
-        img: ""
-    },
-    {
-        alphabet: "J",
-        description: "Jelly",
-        bg: "brown",
-        img: ""
-    },
-    {
-        alphabet: "K",
-        description: "Kite",
-        bg: "lightgreen",
-        img: ""
-    },
-    {
-        alphabet: "L",
-        description: "Lion",
-        bg: "navy",
-        img: ""
-    },
-    {
-        alphabet: "M",
-        description: "Monkey",
-        bg: "violet",
-        img: ""
-    },
-    {
-        alphabet: "N",
-        description: "Nest",
-        bg: "lightblue",
-        img: ""
-    },
-    {
-        alphabet: "O",
-        description: "Owl",
-        bg: "gold",
-        img: ""
-    },
-    {
-        alphabet: "P",
-        description: "Panda",
-        bg: "silver",
-        img: ""
-    },
-    {
-        alphabet: "Q",
-        description: "Queen",
-        bg: "crimson",
-        img: ""
-    },
-    {
-        alphabet: "R",
-        description: "Rabbit",
-        bg: "coral",
-        img: ""
-    },
-    {
-        alphabet: "S",
-        description: "Snake",
-        bg: "aqua",
-        img: ""
-    },
-    {
-        alphabet: "T",
-        description: "Tiger",
-        bg: "lime",
-        img: ""
-    },
-    {
-        alphabet: "U",
-        description: "Umbrella",
-        bg: "indigo",
-        img: ""
-    },
-    {
-        alphabet: "V",
-        description: "Violin",
-        bg: "plum",
-        img: ""
-    },
-    {
-        alphabet: "W",
-        description: "Whale",
-        bg: "lavender",
-        img: ""
-    },
-    {
-        alphabet: "X",
-        description: "Xylophone",
-        bg: "maroon",
-        img: ""
-    },
-    {
-        alphabet: "Y",
-        description: "Yacht",
-        bg: "orchid",
-        img: ""
-    },
-    {
-        alphabet: "Z",
-        description: "Zebra",
-        bg: "khaki"
-    }
 ];
