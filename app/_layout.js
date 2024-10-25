@@ -39,8 +39,57 @@ const _layout = () => {
         },
     ]
 
+    const RenderHeader = () => {
+        return (
+            <View>
+                {/* BANNER */}
+                <View style={{ marginTop: 20 }}>
+                    <Image source={require('../assets/images/banner.jpg')}
+                        style={{ height: 220, width: '100%', borderRadius: 10 }} />
+                </View>
+                {/* SMALLER LISTS */}
+                <View style={{ marginVertical: 20 }}>
+                    <FlatList
+                        data={listData}
+                        horizontal={true}
+                        showsHorizontalScrollIndicator={false}
+                        renderItem={({ item }) => {
+                            return (
+                                <View style={styles.roundCtn}>
+                                    <Text>{item}</Text>
+                                </View>
+                            )
+                        }}
+                    />
+                </View>
+                {/* PRODUCT LISTS */}
+                <View>
+                    <FlatList
+                        data={fashionData}
+                        numColumns={2}
+                        columnWrapperStyle={{ justifyContent: 'space-between' }}
+                        renderItem={({ item }) => {
+                            return (
+                                <View style={styles.fashionCtn}>
+                                    <Image source={{ uri: item.img }}
+                                        style={{ height: 150, width: '100%', borderTopLeftRadius: 5, borderTopRightRadius: 5 }}
+                                    />
+                                    <View style={{ marginTop: 10, marginHorizontal: 10, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                                        <Text style={{ fontSize: 15, color: "black", fontWeight: 'bold' }}>{item.title}</Text>
+                                        <Text style={{ fontSize: 15, color: "orange", fontWeight: 'bold' }}>{item.price}</Text>
+                                    </View>
+                                </View>
+                            )
+                        }}
+                    />
+                </View>
+            </View>
+        )
+    }
+
+
     return (
-        <ScrollView style={styles.page}>
+        <View style={styles.page}>
             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                 <View>
                     <Text style={{ fontSize: 20, color: "red", fontWeight: 'bold' }}>Welcome back!</Text>
@@ -60,48 +109,15 @@ const _layout = () => {
                 <Image source={require('../assets/icons/mic.png')}
                     style={{ height: 22, width: 22, }} />
             </View>
-            {/* BANNER */}
-            <View style={{ marginTop: 20 }}>
-                <Image source={require('../assets/images/banner.jpg')}
-                    style={{ height: 220, width: '100%', borderRadius: 10 }} />
-            </View>
-            {/* SMALLER LISTS */}
-            <View style={{ marginVertical: 20 }}>
-                <FlatList
-                    data={listData}
-                    horizontal={true}
-                    showsHorizontalScrollIndicator={false}
-                    renderItem={({ item }) => {
-                        return (
-                            <View style={styles.roundCtn}>
-                                <Text>{item}</Text>
-                            </View>
-                        )
-                    }}
-                />
-            </View>
-            {/* PRODUCT LISTS */}
-            <View>
-                <FlatList
-                    data={fashionData}
-                    numColumns={2}
-                    columnWrapperStyle={{ justifyContent: 'space-between' }}
-                    renderItem={({ item }) => {
-                        return (
-                            <View style={styles.fashionCtn}>
-                                <Image source={{ uri: item.img }}
-                                    style={{ height: 150, width: '100%', borderTopLeftRadius: 5, borderTopRightRadius: 5 }}
-                                />
-                                <View style={{ marginTop: 10, marginHorizontal: 10, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 15, color: "black", fontWeight: 'bold' }}>{item.title}</Text>
-                                    <Text style={{ fontSize: 15, color: "orange", fontWeight: 'bold' }}>{item.price}</Text>
-                                </View>
-                            </View>
-                        )
-                    }}
-                />
-            </View>
-        </ScrollView>
+            <FlatList
+                data={['']}
+                ListHeaderComponent={RenderHeader}
+                showsVerticalScrollIndicator={false}
+            // renderItem={({ item }) => <Text>helo</Text>}
+            // ListFooterComponent={RenderHeader}
+            />
+
+        </View>
     )
 }
 
